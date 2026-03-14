@@ -81,7 +81,7 @@
             border-radius: 50%; 
             border: 8px solid white;
             box-shadow: 0 10px 20px rgba(139, 40, 38, 0.15);
-            margin-top: 80px; /* Đẩy ảnh dịch xuống 1 tí cho cân đối */
+            margin-top: 90px; /* Đẩy ảnh dịch xuống 1 tí cho cân đối */
         }
 
         /* Các Section chung */
@@ -134,7 +134,7 @@
         }
 
         /* Achievement (Có chứa ảnh) */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; }
         .card { 
             background: var(--card-bg); 
             border-radius: 10px; 
@@ -166,6 +166,7 @@
             .hero-image img { width: 250px; height: 250px; margin-top: 0; }
             header { flex-direction: column; gap: 15px; }
             .about-grid { flex-direction: column; }
+            .grid { grid-template-columns: 1fr; } /* Thêm dòng này vào */
         }
     </style>
 </head>
@@ -260,15 +261,6 @@
                 <div class="card-content">
                     <h4>Top 15 - I-Startup 2025</h4>
                     <p>Dự án xuất sắc lọt vào Top 15 Cuộc thi Khởi nghiệp I-Startup (Đội Green Sort).</p>
-                </div>
-            </div>
-            <div class="card">
-                <div style="height: 220px; background: var(--primary); display: flex; align-items: center; justify-content: center; color: white;">
-                    <i class="fas fa-trophy fa-4x"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Top 10 - CBE Hackathon 2025</h4>
-                    <p>Giải quyết các bài toán kinh doanh thực tế qua mô hình công nghệ.</p>
                 </div>
             </div>
         </div>
