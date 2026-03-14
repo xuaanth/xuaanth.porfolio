@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Xuân | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a365d; /* Màu xanh FTU chuyên nghiệp */
+            --secondary: #2b6cb0;
+            --accent: #ed8936; /* Màu nhấn cho các giải thưởng */
+            --bg: #f7fafc;
+            --text: #2d3748;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+
+        header { background: white; padding: 20px 10%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--primary); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--text); font-weight: 500; transition: 0.3s; }
+        nav a:hover { color: var(--secondary); }
+
+        .hero { padding: 100px 10%; display: flex; align-items: center; gap: 50px; background: linear-gradient(135deg, #fff 0%, #ebf8ff 100%); }
+        .hero-text h1 { font-size: 3rem; color: var(--primary); margin-bottom: 10px; }
+        .hero-text h2 { color: var(--secondary); font-weight: 400; margin-bottom: 20px; }
+        .hero-text p { max-width: 600px; font-size: 1.1rem; margin-bottom: 30px; }
+
+        .btn { padding: 12px 25px; background: var(--primary); color: white; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { background: var(--secondary); transform: translateY(-2px); }
+
+        .section { padding: 80px 10%; }
+        .section-title { text-align: center; margin-bottom: 50px; font-size: 2rem; color: var(--primary); }
+
+        /* Stats Section */
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+        .stat-card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .stat-card h3 { font-size: 2.5rem; color: var(--accent); }
+
+        /* Project & Achievement Cards */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 25px; border-radius: 10px; border-left: 5px solid var(--primary); transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 15px rgba(0,0,0,0.1); }
+        .card h4 { margin-bottom: 10px; color: var(--primary); }
+        .tag { display: inline-block; background: #edf2f7; padding: 2px 10px; border-radius: 15px; font-size: 0.8rem; margin-top: 10px; }
+
+        footer { background: var(--primary); color: white; text-align: center; padding: 50px 10%; }
+        .social-links a { color: white; font-size: 1.5rem; margin: 0 15px; transition: 0.3s; }
+        .social-links a:hover { color: var(--accent); }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding: 50px 5%; }
+            header { padding: 15px 5%; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">THANH XUÂN.</div>
+        <nav>
+            <a href="#about">Giới thiệu</a>
+            <a href="#achievements">Thành tựu</a>
+            <a href="#experience">Kinh nghiệm</a>
+            <a href="#skills">Kỹ năng</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Nguyễn Thanh Xuân</h1>
+            <h2>International Business | Sales & Research</h2> [cite: 2, 14]
+            <p>Sinh viên năm 3 Đại học Ngoại thương với niềm đam mê kết hợp giữa tư duy kinh doanh và phân tích dữ liệu chuyên sâu. Từng đạt giải thưởng nghiên cứu khoa học cấp quốc gia và có kinh nghiệm thực chiến trong lĩnh vực Sales & Đối ngoại.</p> [cite: 14, 51]
+            <a href="mailto:thanhxuanxuan2603@gmail.com" class="btn">Kết nối với tôi</a> [cite: 5]
+        </div>
+    </section>
+
+    <section class="section" style="background: white;">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>8.4/10</h3>
+                <p>GPA hiện tại</p>
+            </div>
+            <div class="stat-card">
+                <h3>03</h3>
+                <p>Bài báo Quốc tế (Q2/Q3)</p>
+            </div>
+            <div class="stat-card">
+                <h3>100M+</h3> [cite: 49]
+                <p>VNĐ Tài trợ đã kêu gọi</p>
+            </div>
+            <div class="stat-card">
+                <h3>Top 5</h3> [cite: 53]
+                <p>CE Hackathon 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="section">
+        <h3 class="section-title">Thành tựu nổi bật</h3> [cite: 50]
+        <div class="grid">
+            <div class="card">
+                <h4>Giải Ba - Olympic Kinh tế lượng và Ứng dụng 2025</h4> 
+                <p>Đề tài nghiên cứu khoa học cấp Quốc gia với vai trò Trưởng nhóm (Team Leader).</p> [cite: 51]
+                <span class="tag">Research</span> <span class="tag">Econometrics</span>
+            </div>
+            <div class="card">
+                <h4>Top 15 Finalist - I-Startup 2025</h4> [cite: 54]
+                <p>Cuộc thi khởi nghiệp dành cho sinh viên quy mô toàn quốc.</p>
+                <span class="tag">Startup</span> <span class="tag">Business Plan</span>
+            </div>
+            <div class="card">
+                <h4>Top 10 Finalist - CBE Hackathon 2025</h4> [cite: 55]
+                <p>Giải quyết các bài toán kinh doanh thực tế qua mô hình công nghệ.</p>
+                <span class="tag">Hackathon</span> <span class="tag">Problem Solving</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section" style="background: white;">
+        <h3 class="section-title">Kinh nghiệm làm việc</h3> [cite: 27]
+        <div class="grid">
+            <div class="card">
+                <h4>LC Technology LLC</h4> [cite: 29]
+                <p><strong>Project Collaborator (Customer Success)</strong></p> [cite: 30]
+                <p>Tìm kiếm và chăm sóc khách hàng tiềm năng qua hệ thống email & phone call.</p> [cite: 32]
+                <span class="tag">09/2025 - Hiện tại</span> [cite: 31]
+            </div>
+            <div class="card">
+                <h4>G.Empire Real Estate JSC</h4> [cite: 34]
+                <p><strong>Short-term Recruitment Intern</strong></p> [cite: 35]
+                <p>Hỗ trợ tuyển dụng, sàng lọc hồ sơ và điều phối lịch phỏng vấn.</p> [cite: 36]
+                <span class="tag">01/2025 - 02/2025</span> [cite: 40]
+            </div>
+            <div class="card">
+                <h4>FTU Real Estate Research Club (REC)</h4> [cite: 45]
+                <p><strong>Ban Đối ngoại (Organizing Committee)</strong></p> [cite: 47]
+                <p>Kêu gọi thành công hơn 100 triệu VNĐ tài trợ cho các sự kiện của CLB.</p> [cite: 49]
+                <span class="tag">10/2023 - 01/2025</span> [cite: 46]
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h3 class="section-title">Kỹ năng & Ngôn ngữ</h3> [cite: 8, 24]
+        <div class="grid">
+            <div class="card">
+                <h4>Công cụ & Phân tích</h4> [cite: 9]
+                <p>Python, R, SQL, MS Office (MOS), Google Workspace.</p>
+            </div>
+            <div class="card">
+                <h4>Kỹ năng mềm</h4> [cite: 18]
+                <p>Lập kế hoạch, Làm việc nhóm, Lãnh đạo, Thuyết trình.</p> [cite: 18, 19, 21, 22]
+            </div>
+            <div class="card">
+                <h4>Ngôn ngữ</h4> [cite: 24]
+                <p>Tiếng Anh (Thành thạo), Tiếng Trung (HSK 4).</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Kết nối với Thanh Xuân qua các nền tảng:</p>
+        <div class="social-links" style="margin-top: 20px;">
+            <a href="https://www.linkedin.com/in/xuanthanh263/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:thanhxuanxuan2603@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/xuanthanh263" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+        <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.7;">© 2026 Nguyễn Thanh Xuân. Built with passion & AI.</p>
+    </footer>
+
+</body>
+</html>
